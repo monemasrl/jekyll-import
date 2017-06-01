@@ -15,7 +15,7 @@ module JekyllImport
       def self.specify_options(c)
         c.option 'access_token', '--access_token ACCESS_TOKEN', 'Access token (default: "")'
         c.option 'space_id', '--space_id SPACE', 'Space ID (default: "")'
-        c.option 'api_endpoint', '--api API_ENDPOINT', 'API Endpoint (default: "api.contentful.com")'
+        c.option 'api_endpoint', '--api_endpoint API_ENDPOINT', 'API Endpoint (default: "api.contentful.com")'
         c.option 'post_content_type', '--post_content_type CONTENT_TYPE', 'Posts Content Type (default: "posts")'
         c.option 'page_content_type', '--page_content_type CONTENT_TYPE', 'Pages Content Type (default: "pages")'
         c.option 'clean_entities', '--clean_entities', 'Whether to clean entities (default: true)'
@@ -59,7 +59,7 @@ module JekyllImport
         options = {
           :access_token        => opts.fetch('access_token', ''),
           :space_id            => opts.fetch('space_id', ''),
-          :api_endpoint        => opts.fetch('api', 'api.contentful.com'),
+          :api_endpoint        => opts.fetch('api_endpoint', 'api.contentful.com'),
           :clean_entities      => opts.fetch('clean_entities', true),
           :more_excerpt        => opts.fetch('more_excerpt', true),
           :more_anchor         => opts.fetch('more_anchor', true),
