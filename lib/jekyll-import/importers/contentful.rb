@@ -5,7 +5,7 @@ module JekyllImport
       def self.require_deps
         JekyllImport.require_with_fallback(%w[
           rubygems
-          contenful
+          contentful
           fileutils
           safe_yaml
           unidecode
